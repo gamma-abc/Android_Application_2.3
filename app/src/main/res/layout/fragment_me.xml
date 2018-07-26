@@ -38,7 +38,7 @@
         android:layout_height="150dp"
         android:layout_margin="15dp"
         android:layout_below="@id/me_navigation"
-        android:background="#ffffff">
+        android:background="@drawable/bg_corner">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -84,9 +84,9 @@
             <ImageView
                 android:id="@+id/apply_record_image"
                 android:layout_width="32dp"
-                android:layout_height="50dp"
-                android:src="@drawable/icon_love"
-                />
+                android:layout_height="30dp"
+                android:src="@drawable/iconmonstr_pen_24"
+                android:layout_above="@+id/view2" />
             <TextView
                 android:id="@+id/apply_record_text"
                 android:layout_width="wrap_content"
@@ -122,13 +122,13 @@
             android:id="@+id/not_watch_image"
             android:layout_width="32dp"
             android:layout_height="50dp"
-            android:src="@drawable/icon_love"
+            android:src="@drawable/do_not_watch_24"
             />
             <TextView
                 android:id="@+id/not_watch_text"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="不让改公司看我的简历"
+                android:text="不让该公司看我的简历"
                 android:gravity="center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
@@ -160,7 +160,7 @@
         android:layout_height="100dp"
         android:layout_margin="15dp"
         android:layout_below="@id/me_two"
-        android:background="#ffffff">
+        android:background="@drawable/bg_corner">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                 android:id="@+id/me_three_vip_image"
                 android:layout_width="32dp"
                 android:layout_height="50dp"
-                android:src="@drawable/icon_love"
+                android:src="@drawable/icon_vip_24"
                 />
             <TextView
                 android:id="@+id/me_three_vip_text"
@@ -206,8 +206,8 @@
             <ImageView
                 android:id="@+id/me_three_salary_search_image"
                 android:layout_width="32dp"
-                android:layout_height="50dp"
-                android:src="@drawable/icon_love"
+                android:layout_height="40dp"
+                android:src="@drawable/search_money_24"
                 />
             <TextView
                 android:id="@+id/me_three_salary_search_text"
@@ -245,7 +245,7 @@
         android:layout_height="100dp"
         android:layout_margin="15dp"
         android:layout_below="@id/me_three"
-        android:background="#ffffff">
+        android:background="@drawable/bg_corner">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -255,7 +255,7 @@
                 android:id="@+id/me_four_help_image"
                 android:layout_width="32dp"
                 android:layout_height="50dp"
-                android:src="@drawable/icon_love"
+                android:src="@drawable/user_question_24"
                 />
             <TextView
                 android:id="@+id/me_four_help_text"
@@ -292,7 +292,7 @@
                 android:id="@+id/me_four_setting_image"
                 android:layout_width="32dp"
                 android:layout_height="50dp"
-                android:src="@drawable/icon_love" />
+                android:src="@drawable/setting_24" />
             <TextView
                 android:id="@+id/me_four_setting_text"
                 android:layout_width="wrap_content"
