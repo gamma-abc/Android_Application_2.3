@@ -4,8 +4,6 @@
     android:layout_height="match_parent">
 
 
-
-
     <include
         android:id="@+id/dingbu"
         android:layout_height="wrap_content"
