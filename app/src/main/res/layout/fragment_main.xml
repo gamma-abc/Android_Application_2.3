@@ -1,7 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
-</RelativeLayout>
+
+
+    <include
+        android:id="@+id/dingbu"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/search"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <!--图片轮播-->
+            <RelativeLayout
+
+                android:id="@+id/photo_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dingbu"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:background="@mipmap/job"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <!--控件部分-->
+            <LinearLayout
+                android:layout_below="@+id/photo_cycle"
+                android:id="@+id/button_Top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_JobSearch"
+                    android:text="职位搜索"
+                    android:textSize="30px"
+                    android:layout_weight="0.2"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_WhoSawMe"
+                    android:text="谁看过我"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/button_JobSearch"
+                    android:layout_weight="0.2"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_Application_Record"
+                    android:text="申请记录"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/button_WhoSawMe"
+                    android:layout_weight="0.2"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_Campus_Recruiting"
+                    android:text="校园招聘"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/button_Application_Record"
+                    android:layout_weight="0.2"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_Strategy"
+                    android:text="求职攻略"
+                    android:textSize="30px"
+                    android:layout_weight="0.2"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_flag"
+                android:layout_below="@+id/button_Top"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="- 为你精选好的职位 -"
+                    android:textColor="#FFA500"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/text_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+                <View
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"
+                    >
+                </View>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
