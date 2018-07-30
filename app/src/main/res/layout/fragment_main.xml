@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
     <include
-        android:id="@+id/dingbu"
+        android:id="@+id/top"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         layout="@layout/search"/>
@@ -20,15 +20,13 @@
             android:layout_height="wrap_content">
 
 
-
-
             <!--图片轮播-->
             <RelativeLayout
 
                 android:id="@+id/photo_cycle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/dingbu"
+                android:layout_below="@+id/top"
                 android:layout_marginTop="6dp"
                 android:layout_marginLeft="6dp"
                 android:layout_marginRight="6dp"
@@ -55,17 +53,17 @@
                 >
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/button_JobSearch"
-                    android:text="职位搜索"
-                    android:textSize="30px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+
                     android:layout_weight="0.2"
-                    />
+                    android:text="职位搜索"
+                    android:textSize="30px" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:id="@+id/button_WhoSawMe"
                     android:text="谁看过我"
                     android:textSize="30px"
@@ -75,7 +73,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:id="@+id/button_Application_Record"
                     android:text="申请记录"
                     android:textSize="30px"
@@ -85,7 +83,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:id="@+id/button_Campus_Recruiting"
                     android:text="校园招聘"
                     android:textSize="30px"
@@ -95,7 +93,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:id="@+id/button_Strategy"
                     android:text="求职攻略"
                     android:textSize="30px"
@@ -131,6 +129,7 @@
                 android:orientation="vertical">
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view1"
                     android:layout_width="match_parent"
@@ -140,6 +139,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view2"
                     android:layout_width="match_parent"
@@ -149,6 +149,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view3"
                     android:layout_width="match_parent"
@@ -158,6 +159,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view4"
                     android:layout_width="match_parent"
@@ -167,6 +169,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view5"
                     android:layout_width="match_parent"
@@ -176,6 +179,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view6"
                     android:layout_width="match_parent"
@@ -185,6 +189,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view7"
                     android:layout_width="match_parent"
@@ -194,6 +199,7 @@
                 </View>
 
                 <View
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:id="@+id/view8"
                     android:layout_width="match_parent"

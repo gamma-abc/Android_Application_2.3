@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context="com.example.junk.android_application_23.MainActivity">
     <!--本地修改的内容，即将传到GitHub上-->
     <!--<TextView-->
