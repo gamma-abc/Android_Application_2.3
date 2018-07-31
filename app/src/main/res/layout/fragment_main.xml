@@ -9,100 +9,70 @@
         layout="@layout/search"
         android:layout_width="402dp"
         android:layout_height="wrap_content" />
-
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:fadingEdge="vertical">
-
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
-
-
-
-
             <!--图片轮播-->
             <RelativeLayout
-
-
                 android:id="@+id/photo_cycle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="6dp"
                 android:layout_marginLeft="6dp"
                 android:layout_marginRight="6dp"
-                android:layout_marginBottom="6dp"
-                >
-
+                android:layout_marginBottom="6dp">
                 <ImageButton
                     android:id="@+id/imageButton_image_first"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/job"
-                    />
-
-
-
-
-
+                    android:src="@mipmap/job" />
             </RelativeLayout>
-
-
-
-
             <!--控件部分-->
             <LinearLayout
                 android:layout_below="@+id/photo_cycle"
                 android:id="@+id/button_Top"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
-
+                android:orientation="horizontal">
                 <Button
                     android:id="@+id/button_JobSearch"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="75dp"
 
-                    android:layout_weight="0.2"
+                    android:layout_weight="1"
                     android:text="我要找工作"
                     android:textSize="30px" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:id="@+id/button_WhoSawMe"
                     android:text="我要招聘"
                     android:textSize="30px"
                     android:layout_toRightOf="@+id/button_JobSearch"
-                    android:layout_weight="0.2"
+                    android:layout_weight="1"
                     />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:id="@+id/button_Application_Record"
                     android:text="我要投资"
                     android:textSize="30px"
                     android:layout_toRightOf="@+id/button_WhoSawMe"
-                    android:layout_weight="0.2"
-                    />
-
+                    android:layout_weight="1" />
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:id="@+id/button_Campus_Recruiting"
                     android:text="我要交友"
                     android:textSize="30px"
                     android:layout_toRightOf="@+id/button_Application_Record"
-                    android:layout_weight="0.2"
-                    />
-
-
-
-
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -131,10 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
                 <LinearLayout
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -155,16 +122,12 @@
                         android:layout_marginLeft="160dp"
                         android:text="6-8千/月"
                         android:textSize="17dip"
-                        android:textColor="#FFD700"
-                        />
-
+                        android:textColor="#FFD700" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="20dp"
@@ -189,13 +152,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:background="#BEBEBE"
-
                     >
                 </View>
             </LinearLayout>
-
             <!--work2-->
-
             <LinearLayout
                 android:layout_below="@+id/work_1"
                 android:id="@+id/work_2"
@@ -227,20 +187,17 @@
                         android:textColor="#FFD700"
                         />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="开普电子"
-                        android:textColor="#000000"
-                        />
+                        android:textColor="#000000" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -256,13 +213,9 @@
                     android:id="@+id/view2"
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
-                    android:background="#BEBEBE"
-
-                    >
+                    android:background="#BEBEBE">
                 </View>
             </LinearLayout>
-
-
             <!--分割-->
             <View
                 android:id="@+id/flag_buttom"
@@ -270,7 +223,6 @@
                 android:layout_marginBottom="50dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
             </View>
         </RelativeLayout>
     </ScrollView>

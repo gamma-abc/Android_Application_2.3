@@ -31,6 +31,7 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
      protected LinearLayout mWhoSeeMe;        //消息页-谁看过我-点击弹出的页面
      //private Button mTextV_Who_See_Me;
      protected Button mBtnMessage;
+     //private Button mChangLange;
 
      //我的-职位收藏
      protected  LinearLayout mMeCollection;
@@ -46,7 +47,6 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initView();
         //获取fragment管理类
         this.getSupportFragmentManager()

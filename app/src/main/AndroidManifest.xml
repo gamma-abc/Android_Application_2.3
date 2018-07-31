@@ -22,6 +22,8 @@
         <activity android:name=".fragment.HrLetterActivity" />
         <activity android:name=".fragment.JobLiveActivity" />
         <activity android:name=".fragment.JobCollectActivity" />
+        <activity android:name=".JobPartTimeActivity" />
+        <activity android:name=".FindHouseActivity"></activity>
         <activity android:name=".Job_CollectionActivity" />
         <activity android:name=".App_record_textActivity" />
         <activity android:name=".VipActivity" />

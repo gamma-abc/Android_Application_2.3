@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.junk.android_application_23.fragment.JobLiveActivity">
+    android:orientation="vertical">
     <RelativeLayout
         android:id="@+id/me_navigation"
-        android:layout_width="395dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="#ffffff"
-        android:weightSum="1"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:weightSum="1">
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -27,7 +23,7 @@
             android:layout_height="49dp"
             android:layout_centerHorizontal="true"
             android:gravity="center_vertical"
-            android:text="职场Live"
+            android:text="房产"
             android:textSize="20sp"
             android:textStyle="bold"
             />
@@ -40,4 +36,9 @@
         </View>
 
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮"/>
+</LinearLayout>

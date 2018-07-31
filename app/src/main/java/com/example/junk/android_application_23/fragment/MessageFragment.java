@@ -61,7 +61,7 @@ public class MessageFragment extends Fragment {
          * 职场LIVE的跳转页面
          */
         Button button_joblive =(Button) getActivity().findViewById(R.id.live_button);
-        button_hr_letter.setOnClickListener(new View.OnClickListener() {
+        button_joblive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), JobLiveActivity.class);

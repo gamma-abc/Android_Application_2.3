@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.junk.android_application_23.fragment.JobLiveActivity">
+    tools:context="com.example.junk.android_application_23.JobPartTimeActivity">
     <RelativeLayout
         android:id="@+id/me_navigation"
         android:layout_width="395dp"
@@ -27,7 +27,7 @@
             android:layout_height="49dp"
             android:layout_centerHorizontal="true"
             android:gravity="center_vertical"
-            android:text="职场Live"
+            android:text="兼职招聘"
             android:textSize="20sp"
             android:textStyle="bold"
             />

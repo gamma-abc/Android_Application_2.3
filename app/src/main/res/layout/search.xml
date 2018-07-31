@@ -16,6 +16,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:layout_marginTop="10dp"
             android:src="@mipmap/main_scan" />
         <TextView
             android:layout_width="wrap_content"
@@ -30,18 +31,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/saoyisao"
-        android:layout_marginLeft="10dp"
-        >
-
+        android:layout_marginLeft="5dp">
         <EditText
             android:drawableLeft="@drawable/r_50"
             android:drawablePadding="2dp"
-            android:layout_width="317dp"
+            android:layout_width="280dp"
             android:layout_height="59dp"
             android:maxLines="1"
             android:hint="搜索全文/职位名"
             />
-
+        <ToggleButton
+            android:layout_gravity="right|center"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textOff="中文"
+            android:background="@null"
+            android:textOn="ອັກສອນລາວ"/>
 
     </LinearLayout>
 
