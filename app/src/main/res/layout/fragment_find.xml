@@ -65,8 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_margin="10dp">
-                <TextView
-                    android:id="@+id/job_collect_text"
+                <Button
+                    android:id="@+id/job_collect_button"
                     android:clickable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
@@ -79,8 +79,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
                     android:background="#BEBEBE"
-                    android:layout_below="@id/job_collect_text"
-                    android:layout_alignStart="@+id/job_collect_text">
+                    android:layout_below="@id/job_collect_button"
+                    android:layout_alignStart="@+id/job_collect_button">
                 </View>
             </RelativeLayout>
 

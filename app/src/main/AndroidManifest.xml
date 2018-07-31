@@ -18,8 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WhoSeeMeActivity"></activity>
-        <activity android:name=".ShowActivity"></activity>
+        <activity android:name=".WhoSeeMeActivity" />
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".fragment.HrLetterActivity" />
+        <activity android:name=".fragment.JobLiveActivity" />
+        <activity android:name=".fragment.JobCollectActivity"></activity>
     </application>
 
 </manifest>

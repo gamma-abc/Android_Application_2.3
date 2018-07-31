@@ -19,22 +19,23 @@ import com.example.junk.android_application_23.WhoSeeMeActivity;
  */
 
 public class FindFragment extends Fragment {
-    //private Button mbtnfind;
+    private Button mbtnfind;
 
-    @Nullable
-    @Override
+
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_find,container,false);//false 是否附加到布局文件的跟视图中
+        return inflater.inflate(R.layout.fragment_find,container,false);
     }
-//    mbtnfind= (Button) findViewById(R.id.btn_find);
-//        mbtnfind.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            Intent intent =new Intent(MainActivity.this,WhoSeeMeActivity.class);
-//            startActivity(intent);
-//        }
-//    });
 
-
-
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Button button_job_collect =(Button) getActivity().findViewById(R.id.job_collect_button);
+        button_job_collect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), JobCollectActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

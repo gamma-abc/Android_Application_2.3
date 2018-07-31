@@ -35,13 +35,36 @@ public class MessageFragment extends Fragment {
 
         /**
          *为按钮添加点击事件
+         * 谁看过我的跳转页面
          */
 //        找到这个控件
-        Button button =(Button) getActivity().findViewById(R.id.job_collect_button);
+        Button button =(Button) getActivity().findViewById(R.id.who_see_me_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), WhoSeeMeActivity.class);
+                startActivity(intent);
+            }
+        });
+        /**
+         * 人事来信的跳转页面
+         */
+        Button button_hr_letter =(Button) getActivity().findViewById(R.id.hr_letter_button);
+        button_hr_letter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), HrLetterActivity.class);
+                startActivity(intent);
+            }
+        });
+        /**
+         * 职场LIVE的跳转页面
+         */
+        Button button_joblive =(Button) getActivity().findViewById(R.id.live_button);
+        button_hr_letter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), JobLiveActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context="com.example.junk.android_application_23.fragment.HrLetterActivity">
     <RelativeLayout
         android:id="@+id/me_navigation"
         android:layout_width="match_parent"
@@ -23,10 +25,10 @@
             android:layout_height="49dp"
             android:layout_centerHorizontal="true"
             android:gravity="center_vertical"
-            android:text="谁看过我"
+            android:text="人事来信"
             android:textSize="20sp"
             android:textStyle="bold"
-             />
+            />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -34,9 +36,5 @@
             android:layout_gravity="bottom"
             android:background="#BEBEBE">
         </View>
-
     </RelativeLayout>
-
-
 </LinearLayout>
-

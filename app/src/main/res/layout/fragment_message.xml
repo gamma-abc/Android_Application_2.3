@@ -44,46 +44,49 @@
         android:id="@+id/me_two"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:layout_margin="15dp"
-        android:orientation="vertical"
         android:layout_below="@id/me_navigation"
-        android:background="@drawable/bg_corner">
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_corner"
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/job_collect"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:id="@+id/job_collect"
-            android:onClick="onClick"
             android:clickable="true"
+            android:onClick="onClick"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/job_collect_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/watch_me_48"
                 android:paddingLeft="5dp"
-                />
+                android:src="@drawable/watch_me_48" />
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_margin="10dp">
+
                 <Button
-                    android:id="@+id/job_collect_button"
+                    android:id="@+id/who_see_me_button"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:text="谁看过我"
-                    android:gravity="left|center"
                     android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:text="谁看过我"
                     android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:background="@null"/>
+                    android:textStyle="bold" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="#BEBEBE"
-                    android:layout_below="@id/job_collect_button"
-                    android:layout_alignStart="@+id/job_collect_text">
+                    android:layout_below="@id/who_see_me_button"
+                    android:background="#BEBEBE">
+
                 </View>
             </RelativeLayout>
 
@@ -92,35 +95,40 @@
 
         <!--人事往来-->
         <LinearLayout
+            android:id="@+id/hr_letter"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:id="@+id/hr_letter"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/hr_letter_image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:src="@drawable/hr_letter_48"
-                />
+                android:src="@drawable/hr_letter_48" />
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_margin="10dp">
+
                 <Button
-                    android:id="@+id/hr_letter_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:text="人事来往"
-                    android:gravity="center"
+                    android:id="@+id/hr_letter_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
                     android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:text="人事来往"
                     android:textSize="15sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="#BEBEBE"
-                    android:layout_below="@id/hr_letter_text">
+                    android:layout_below="@id/hr_letter_button"
+                    android:background="#BEBEBE">
+
                 </View>
             </RelativeLayout>
 
@@ -128,37 +136,41 @@
 
         <!--职场Live-->
         <LinearLayout
+            android:id="@+id/live"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:id="@+id/live"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/live_image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:src="@drawable/live_48"
                 android:paddingLeft="5dp"
-                />
+                android:src="@drawable/live_48" />
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_margin="10dp">
+
                 <Button
-                    android:id="@+id/live_text"
+                    android:id="@+id/live_button"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
-                    android:text="职场Live"
-                    android:gravity="center"
                     android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:text="职场Live"
                     android:textSize="15sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="#BEBEBE"
-                    android:layout_below="@id/live_text"
-                    >
+                    android:layout_below="@id/live_button"
+                    android:background="#BEBEBE">
+
                 </View>
             </RelativeLayout>
 
