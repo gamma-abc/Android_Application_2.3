@@ -22,7 +22,13 @@
         <activity android:name=".fragment.HrLetterActivity" />
         <activity android:name=".fragment.JobLiveActivity" />
         <activity android:name=".fragment.JobCollectActivity" />
-        <activity android:name=".Job_CollectActivity"></activity>
+        <activity android:name=".Job_CollectionActivity" />
+        <activity android:name=".App_record_textActivity" />
+        <activity android:name=".VipActivity" />
+        <activity android:name=".fragment.Not_Watch2Activity" />
+        <activity android:name=".SalaryActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>
