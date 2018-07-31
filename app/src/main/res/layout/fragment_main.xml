@@ -38,46 +38,87 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/button_JobSearch"
                     android:layout_width="0dp"
                     android:layout_height="75dp"
-
                     android:layout_weight="1"
-                    android:text="我要找工作"
-                    android:textSize="30px" />
+                    android:background="@drawable/needwork"
+
+                    />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:id="@+id/button_WhoSawMe"
-                    android:text="我要招聘"
-                    android:textSize="30px"
                     android:layout_toRightOf="@+id/button_JobSearch"
                     android:layout_weight="1"
+                    android:background="@drawable/recruitment"
                     />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:id="@+id/button_Application_Record"
-                    android:text="我要投资"
-                    android:textSize="30px"
                     android:layout_toRightOf="@+id/button_WhoSawMe"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@drawable/company"
+                    />
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:id="@+id/button_Campus_Recruiting"
-                    android:text="我要交友"
-                    android:textSize="30px"
                     android:layout_toRightOf="@+id/button_Application_Record"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@drawable/makefriend"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_Top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/button_Top">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要找工作"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要招聘"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要投资"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要交友"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    />
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/text_flag"
-                android:layout_below="@+id/button_Top"
+                android:layout_below="@+id/button_Top_text"
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
