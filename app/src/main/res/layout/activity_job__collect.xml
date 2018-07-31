@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.junk.android_application_23.ShowActivity">
+    tools:context="com.example.junk.android_application_23.Job_CollectActivity">
 
 </android.support.constraint.ConstraintLayout>

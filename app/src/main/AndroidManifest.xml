@@ -19,10 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".WhoSeeMeActivity" />
-        <activity android:name=".ShowActivity" />
         <activity android:name=".fragment.HrLetterActivity" />
         <activity android:name=".fragment.JobLiveActivity" />
-        <activity android:name=".fragment.JobCollectActivity"></activity>
+        <activity android:name=".fragment.JobCollectActivity" />
+        <activity android:name=".Job_CollectActivity"></activity>
     </application>
 
 </manifest>

@@ -27,12 +27,18 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
      protected LinearLayout mMenuFind;
      protected LinearLayout mMenuMessage;
      protected LinearLayout mMenuMe;
+
      protected LinearLayout mWhoSeeMe;        //消息页-谁看过我-点击弹出的页面
      //private Button mTextV_Who_See_Me;
      protected Button mBtnMessage;
 
+     //我的-职位收藏
+     protected  LinearLayout mMeCollection;
+     protected Button mBtnMe;
 
-    protected MainFragment mMainFragment =new MainFragment();  //首页
+
+
+     protected MainFragment mMainFragment =new MainFragment();  //首页
      protected FindFragment mFindFragment=new FindFragment();  //发现
      protected MessageFragment mMessageFragment=new MessageFragment();// 消息页
      protected MeFragment mMeFragment=new MeFragment();        //我的

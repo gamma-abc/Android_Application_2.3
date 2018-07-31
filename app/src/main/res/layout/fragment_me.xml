@@ -50,15 +50,17 @@
                 android:layout_height="50dp"
                 android:src="@drawable/icon_love"
                 />
-            <TextView
+            <Button
                 android:id="@+id/job_collect_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="职位收藏"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"
+                />
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/job_collect_image"
@@ -87,15 +89,16 @@
                 android:layout_height="30dp"
                 android:src="@drawable/iconmonstr_pen_24"
                 android:layout_above="@+id/view2" />
-            <TextView
+            <Button
                 android:id="@+id/apply_record_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="申请记录"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/apply_record_image"
@@ -124,15 +127,16 @@
             android:layout_height="50dp"
             android:src="@drawable/do_not_watch_24"
             />
-            <TextView
+            <Button
                 android:id="@+id/not_watch_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="不让该公司看我的简历"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/not_watch_image"
@@ -172,15 +176,16 @@
                 android:layout_height="50dp"
                 android:src="@drawable/icon_vip_24"
                 />
-            <TextView
+            <Button
                 android:id="@+id/me_three_vip_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="增值服务"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/me_three_vip_image"
@@ -209,15 +214,16 @@
                 android:layout_height="40dp"
                 android:src="@drawable/search_money_24"
                 />
-            <TextView
+            <Button
                 android:id="@+id/me_three_salary_search_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="薪酬查询"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/me_three_salary_search_image"
@@ -257,15 +263,16 @@
                 android:layout_height="50dp"
                 android:src="@drawable/user_question_24"
                 />
-            <TextView
+            <Button
                 android:id="@+id/me_four_help_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="用户反馈和帮助"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/me_four_help_image"
@@ -293,15 +300,16 @@
                 android:layout_width="32dp"
                 android:layout_height="50dp"
                 android:src="@drawable/setting_24" />
-            <TextView
+            <Button
                 android:id="@+id/me_four_setting_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="设置"
-                android:gravity="center"
+                android:gravity="left|center"
                 android:layout_marginLeft="40dp"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="@null"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_toRightOf="@+id/me_four_setting_image"
