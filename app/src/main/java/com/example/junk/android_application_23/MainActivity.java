@@ -1,15 +1,17 @@
  package com.example.junk.android_application_23;
 
-import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.LinearLayout;
+ import android.os.Bundle;
+ import android.support.v7.app.AppCompatActivity;
+ import android.util.Log;
+ import android.view.View;
+ import android.widget.Button;
+ import android.widget.LinearLayout;
+ import android.widget.Toast;
 
-import com.example.junk.android_application_23.fragment.FindFragment;
-import com.example.junk.android_application_23.fragment.MainFragment;
-import com.example.junk.android_application_23.fragment.MeFragment;
-import com.example.junk.android_application_23.fragment.MessageFragment;
+ import com.example.junk.android_application_23.fragment.FindFragment;
+ import com.example.junk.android_application_23.fragment.MainFragment;
+ import com.example.junk.android_application_23.fragment.MeFragment;
+ import com.example.junk.android_application_23.fragment.MessageFragment;
 
  public class MainActivity extends AppCompatActivity implements View.OnClickListener{
      protected LinearLayout mMenuMain;
@@ -17,14 +19,19 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
      protected LinearLayout mMenuMessage;
      protected LinearLayout mMenuMe;
 
-    protected MainFragment mMainFragment =new MainFragment();  //首页
+     protected MainFragment mMainFragment =new MainFragment();  //首页
      protected FindFragment mFindFragment=new FindFragment();  //发现
      protected MessageFragment mMessageFragment=new MessageFragment();// 消息页
      protected MeFragment mMeFragment=new MeFragment();        //我的
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         initView();
         //获取fragment管理类
@@ -43,6 +50,9 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
         //提交
         .commit();
     }
+
+
+
      /**
       * 初始化视图
       */
@@ -54,10 +64,11 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
 
         mMenuMain.setOnClickListener(this);
         mMenuFind.setOnClickListener(this);
-         mMenuMessage.setOnClickListener(this);
+        mMenuMessage.setOnClickListener(this);
         mMenuMe.setOnClickListener(this);
 
      }
+
 
 
      @Override
@@ -99,6 +110,8 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
                          .show(mMeFragment)
                          .commit();
                  break;
+
+
          }
      }
  }
