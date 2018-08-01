@@ -28,7 +28,7 @@
                 <ImageButton
                     android:id="@+id/imageButton_image_first"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:background="@drawable/facephoto"
                     />
             </RelativeLayout>
@@ -183,7 +183,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="140dp"
+                        android:layout_marginLeft="220dp"
                         android:text="异地招聘"
                         android:textSize="10dip"
                         />
@@ -245,7 +245,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:layout_marginLeft="140dp"
+                        android:layout_marginLeft="220dp"
                         android:text="桂林"
                         android:textSize="10dip"
                         />
@@ -259,10 +259,138 @@
                     android:background="#BEBEBE">
                 </View>
             </LinearLayout>
+
+
+            <!--work3-->
+            <LinearLayout
+                android:layout_below="@+id/work_2"
+                android:id="@+id/work_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大数据架构师"
+                        android:textSize="20dip"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:id="@+id/salary3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginLeft="140dp"
+                        android:text="1-1.5万/月"
+                        android:textSize="17dip"
+                        android:textColor="#FFD700"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微量分贝"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="220dp"
+                        android:text="桂林"
+                        android:textSize="10dip"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#BEBEBE">
+                </View>
+            </LinearLayout>
+
+
+            <!--work4-->
+            <LinearLayout
+                android:layout_below="@+id/work_3"
+                android:id="@+id/work_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="区域链工程师"
+                        android:textSize="20dip"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:id="@+id/salary4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginLeft="140dp"
+                        android:text="1-2万/月"
+                        android:textSize="17dip"
+                        android:textColor="#FFD700"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="薪火科技"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="220dp"
+                        android:text="桂林"
+                        android:textSize="10dip"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#BEBEBE">
+                </View>
+            </LinearLayout>
+
+
             <!--分割-->
             <View
                 android:id="@+id/flag_buttom"
-                android:layout_below="@+id/work_2"
+                android:layout_below="@+id/work_4"
                 android:layout_marginBottom="50dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
