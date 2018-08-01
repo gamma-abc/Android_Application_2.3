@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorHomeBackground">
+    android:background="@color/colorGray">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:background="#ffffff"
+                android:background="@color/colorWhite"
                 >
                 <!--我要找工作-->
                 <LinearLayout
@@ -212,7 +212,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@color/colorWhite"
                 >
                 <TextView
                     android:layout_width="match_parent"
