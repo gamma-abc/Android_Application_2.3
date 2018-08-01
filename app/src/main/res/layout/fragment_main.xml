@@ -7,7 +7,7 @@
     <include
         android:id="@+id/top"
         layout="@layout/search"
-        android:layout_width="402dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
@@ -28,7 +28,7 @@
                 <ImageButton
                     android:id="@+id/imageButton_image_first"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="250dp"
                     android:background="@drawable/facephoto"
                     />
             </RelativeLayout>
@@ -38,99 +38,124 @@
                 android:id="@+id/button_Top"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button_JobSearch"
-                    android:layout_width="0dp"
-                    android:layout_height="75dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/needwork"
-
-                    />
-
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="75dp"
-                    android:id="@+id/button_WhoSawMe"
-                    android:layout_toRightOf="@+id/button_JobSearch"
-                    android:layout_weight="1"
-                    android:background="@drawable/recruitment"
-                    />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="75dp"
-                    android:id="@+id/button_Application_Record"
-                    android:layout_toRightOf="@+id/button_WhoSawMe"
-                    android:layout_weight="1"
-                    android:background="@drawable/company"
-                    />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="75dp"
-                    android:id="@+id/button_Campus_Recruiting"
-                    android:layout_toRightOf="@+id/button_Application_Record"
-                    android:layout_weight="1"
-                    android:background="@drawable/makefriend"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/button_Top_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_below="@+id/button_Top">
-                <TextView
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
+                android:gravity="center"
+                >
+                <!--我要找工作-->
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="我要找工作"
-                    android:textSize="10sp"
+                    android:orientation="vertical"
                     android:layout_weight="1"
-                    />
-                <TextView
-                    android:layout_marginLeft="50dp"
-                    android:layout_width="wrap_content"
+                    >
+                    <Button
+                        android:id="@+id/button_JobSearch"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/needwork"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="我要找工作"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+                <!--我要招聘-->
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="我要招聘"
-                    android:textSize="10sp"
+                    android:orientation="vertical"
                     android:layout_weight="1"
-                    />
-                <TextView
-                    android:layout_marginLeft="50dp"
-                    android:layout_width="wrap_content"
+                    >
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/button_WhoSawMe"
+                        android:layout_gravity="center"
+                        android:background="@drawable/recruitment"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="我要招聘"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+                <!--我要投资-->
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="我要投资"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
-                <TextView
-                    android:layout_marginLeft="50dp"
-                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/button_Application_Record"
+                        android:layout_toRightOf="@+id/button_WhoSawMe"
+                        android:background="@drawable/company"
+                        />
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我要投资"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+                <!--我要交友-->
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="我要交友"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
-
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/button_Campus_Recruiting"
+                        android:layout_toRightOf="@+id/button_Application_Record"
+                        android:background="@drawable/makefriend"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="我要交友"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:layout_below="@+id/button_Top"
                 android:id="@+id/text_flag"
-                android:layout_below="@+id/button_Top_text"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-
                 <TextView
-
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="110dp"
+                    android:gravity="center"
                     android:text="- 为你精选好的职位 -"
                     android:textColor="#FFA500"
                     />
@@ -155,6 +180,7 @@
                         android:layout_height="wrap_content"
                         android:text="测试工程师"
                         android:textSize="20dip"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         />
                     <TextView
@@ -217,6 +243,7 @@
                         android:layout_height="wrap_content"
                         android:text="JAVA工程师"
                         android:textSize="20dip"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         />
                     <TextView
