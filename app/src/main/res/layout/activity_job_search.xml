@@ -4,19 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.junk.android_application_23.App_record_textActivity">
-
+    tools:context="com.example.junk.android_application_23.JobSearchActivity">
     <RelativeLayout
         android:id="@+id/me_navigation"
-        android:layout_width="344dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="#ffffff"
-        android:weightSum="1"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:weightSum="1">
         <Button
-            android:id="@+id/app_button_back"
+            android:id="@+id/job_search_back"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginLeft="20dp"
@@ -29,7 +26,7 @@
             android:layout_height="49dp"
             android:layout_centerHorizontal="true"
             android:gravity="center_vertical"
-            android:text="申请记录"
+            android:text="职位搜索"
             android:textSize="20sp"
             android:textStyle="bold"
             />
@@ -40,8 +37,5 @@
             android:layout_gravity="bottom"
             android:background="#BEBEBE">
         </View>
-
     </RelativeLayout>
-
-
 </LinearLayout>

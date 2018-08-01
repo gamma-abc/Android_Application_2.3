@@ -15,9 +15,7 @@ public class FindHouseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_find_house);
 
 
-        /**
-         * 返回
-         */
+
         Button find_home_back = (Button)findViewById(R.id.find_home_back);
         find_home_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,7 +24,21 @@ public class FindHouseActivity extends AppCompatActivity {
             }
         });
     }
+    private class OnClick implements View.OnClickListener{
 
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.find_home_back:
+                    /**
+                     * 返回
+                     */
+                    finish();
+                    break;
+
+            }
+        }
+    }
 
 
 }

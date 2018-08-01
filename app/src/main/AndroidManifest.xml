@@ -23,14 +23,15 @@
         <activity android:name=".fragment.JobLiveActivity" />
         <activity android:name=".fragment.JobCollectActivity" />
         <activity android:name=".JobPartTimeActivity" />
-        <activity android:name=".FindHouseActivity"></activity>
+        <activity android:name=".FindHouseActivity" />
         <activity android:name=".Job_CollectionActivity" />
         <activity android:name=".App_record_textActivity" />
         <activity android:name=".VipActivity" />
         <activity android:name=".fragment.Not_Watch2Activity" />
         <activity android:name=".SalaryActivity" />
         <activity android:name=".HelpActivity" />
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".JobSearchActivity"></activity>
     </application>
 
 </manifest>
