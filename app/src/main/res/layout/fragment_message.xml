@@ -119,7 +119,7 @@
                     android:layout_marginLeft="5dp"
                     android:background="@null"
                     android:gravity="left|center"
-                    android:text="人事来往"
+                    android:text="人事来信"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 

@@ -14,11 +14,12 @@
         android:weightSum="1"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="8dp">
-        <ImageView
+        <Button
+            android:id="@+id/job_live_back"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/common_title_fanhui_orange"
+            android:background="@drawable/common_title_fanhui_orange"
             android:layout_centerVertical="true"/>
 
         <TextView
