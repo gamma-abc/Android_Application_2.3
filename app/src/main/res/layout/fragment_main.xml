@@ -31,6 +31,8 @@
                     android:layout_height="250dp"
                     android:background="@drawable/facephoto"
                     />
+
+
             </RelativeLayout>
             <!--控件部分-->
             <LinearLayout
