@@ -22,7 +22,7 @@ import com.example.junk.android_application_23.fragment.MainFragment;
 import com.example.junk.android_application_23.fragment.MeFragment;
 import com.example.junk.android_application_23.fragment.MessageFragment;
 
- public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+ public class MainActivity extends AppCompatActivity implements View.OnClickListener {
      protected LinearLayout mMenuMain;
      protected LinearLayout mMenuFind;
      protected LinearLayout mMenuMessage;
@@ -33,57 +33,62 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
      protected Button mBtnMessage;
      //private Button mChangLange;
 
+     //我要找工作
+     private Button mBtnJobSearchbutton;
+
+
      //我的-职位收藏
-     protected  LinearLayout mMeCollection;
+     protected LinearLayout mMeCollection;
      protected Button mBtnMe;
 
 
+     protected MainFragment mMainFragment = new MainFragment();  //首页
+     protected FindFragment mFindFragment = new FindFragment();  //发现
+     protected MessageFragment mMessageFragment = new MessageFragment();// 消息页
+     protected MeFragment mMeFragment = new MeFragment();        //我的
 
-     protected MainFragment mMainFragment =new MainFragment();  //首页
-     protected FindFragment mFindFragment=new FindFragment();  //发现
-     protected MessageFragment mMessageFragment=new MessageFragment();// 消息页
-     protected MeFragment mMeFragment=new MeFragment();        //我的
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        initView();
-        //获取fragment管理类
-        this.getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.container_content,mMainFragment)
-                .add(R.id.container_content,mFindFragment)
-                .hide(mFindFragment)
-                .add(R.id.container_content,mMessageFragment)
-                .hide(mMessageFragment)
-                .add(R.id.container_content,mMeFragment)
-                .hide(mMeFragment)
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+         initView();
+         //获取fragment管理类
+         this.getSupportFragmentManager()
+                 .beginTransaction()
+                 .add(R.id.container_content, mMainFragment)
+                 .add(R.id.container_content, mFindFragment)
+                 .hide(mFindFragment)
+                 .add(R.id.container_content, mMessageFragment)
+                 .hide(mMessageFragment)
+                 .add(R.id.container_content, mMeFragment)
+                 .hide(mMeFragment)
 
 
-        //事务添加 默认：显示首页 其他页面：隐藏
-        //提交
-        .commit();
-    }
+                 //事务添加 默认：显示首页 其他页面：隐藏
+                 //提交
+                 .commit();
+     }
+
      /**
       * 初始化视图
       */
      private void initView() {
-         mMenuMain= (LinearLayout) this.findViewById(R.id.menu_main);
-         mMenuFind= (LinearLayout) this.findViewById(R.id.menu_find);
-         mMenuMessage= (LinearLayout) this.findViewById(R.id.menu_message);
-         mMenuMe= (LinearLayout) this.findViewById(R.id.menu_me);
+         mMenuMain = (LinearLayout) this.findViewById(R.id.menu_main);
+         mMenuFind = (LinearLayout) this.findViewById(R.id.menu_find);
+         mMenuMessage = (LinearLayout) this.findViewById(R.id.menu_message);
+         mMenuMe = (LinearLayout) this.findViewById(R.id.menu_me);
 
-        mMenuMain.setOnClickListener(this);
-        mMenuFind.setOnClickListener(this);
+         mMenuMain.setOnClickListener(this);
+         mMenuFind.setOnClickListener(this);
          mMenuMessage.setOnClickListener(this);
-        mMenuMe.setOnClickListener(this);
+         mMenuMe.setOnClickListener(this);
 
      }
 
 
      @Override
      public void onClick(View view) {
-         switch (view.getId()){
+         switch (view.getId()) {
              case R.id.menu_main:
                  this.getSupportFragmentManager()
                          .beginTransaction()
@@ -120,6 +125,8 @@ import com.example.junk.android_application_23.fragment.MessageFragment;
                          .show(mMeFragment)
                          .commit();
                  break;
+
          }
      }
  }
+
