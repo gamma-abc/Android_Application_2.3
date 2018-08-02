@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.example.junk.android_application_23.IWangtRecuritSelectTypeActivity;
 import com.example.junk.android_application_23.JobSearchActivity;
 import com.example.junk.android_application_23.R;
 
@@ -20,6 +21,7 @@ import com.example.junk.android_application_23.R;
 
 public class MainFragment extends Fragment{
     private EditText mEdit_job_search;
+    private Button mbtn_jobsearch,mbtn_i_wang_recruit;
     private ImageButton imageButton_image_first;
 
     @Nullable
@@ -32,7 +34,12 @@ public class MainFragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+//        头部搜索框获取ID
          mEdit_job_search= (EditText) getActivity().findViewById(R.id.search_edittext);
+//        我要招聘按钮获取ID
+        mbtn_jobsearch= (Button) getActivity().findViewById(R.id.button_JobSearch);
+//        我要招聘按钮获取ID
+        mbtn_i_wang_recruit= (Button) getActivity().findViewById(R.id.i_want_recruit_button);
         setListeners();     //获取到ID后调用下面的方法
     }
 
@@ -47,6 +54,14 @@ public class MainFragment extends Fragment{
          */
         mEdit_job_search.setFocusable(false);
         mEdit_job_search.setOnClickListener(onclick);
+        /**
+         * 我要找工作按钮跳转
+         */
+        mbtn_jobsearch.setOnClickListener(onclick);
+        /**
+         * 我要招聘按钮跳转
+         */
+        mbtn_i_wang_recruit.setOnClickListener(onclick);
 
     }
 
@@ -61,9 +76,21 @@ public class MainFragment extends Fragment{
             switch (v.getId()){
                 case R.id.search_edittext:
                     /**
-                     * 跳转到职位搜索页面
+                     * 首页头部搜索栏点击跳转到职位搜索页面
                      */
                     intent=new Intent(getActivity(),JobSearchActivity.class);
+                    break;
+                case R.id.button_JobSearch:
+                    /**
+                     * 首页我要找工作搜索按钮跳转到搜索职位页
+                     */
+                    intent=new Intent(getActivity(),JobSearchActivity.class);
+                    break;
+                case R.id.i_want_recruit_button:
+                    /**
+                     * 首页我要招聘按钮跳转
+                     */
+                    intent=new Intent(getActivity(), IWangtRecuritSelectTypeActivity.class);
                     break;
             }
             startActivity(intent);

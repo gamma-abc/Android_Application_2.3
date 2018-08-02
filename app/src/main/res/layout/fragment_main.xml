@@ -137,7 +137,7 @@
                     <Button
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:id="@+id/button_WhoSawMe"
+                        android:id="@+id/i_want_recruit_button"
                         android:layout_gravity="center"
                         android:background="@drawable/recruitment"
                         android:layout_weight="1"

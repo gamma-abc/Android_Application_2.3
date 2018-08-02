@@ -31,7 +31,9 @@
         <activity android:name=".SalaryActivity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".JobSearchActivity"></activity>
+        <activity android:name=".JobSearchActivity" />
+        <activity android:name=".IWangtRecuritSelectTypeActivity" />
+        <activity android:name=".ReleaseRecruitmentInformentActivity"></activity>
     </application>
 
 </manifest>
