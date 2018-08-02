@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="#708069"
+        android:background="@color/colorWhite"
         android:weightSum="1">
         <Button
             android:id="@+id/release_recruitment_iforment_back"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_marginLeft="20dp"
             android:background="@drawable/common_title_fanhui_orange"
             android:layout_centerVertical="true"/>
@@ -28,7 +28,6 @@
             android:layout_centerHorizontal="true"
             android:gravity="center_vertical"
             android:text="发布招聘信息"
-            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
 
@@ -48,7 +47,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/colorGray"
         >
 
         <EditText
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="39dp"
             android:maxLines="1"
-            android:background="@drawable/bg_corner_gray"
+            android:background="@drawable/bg_corner"
             android:hint="输入您要招聘的职位名称，如“销售”"
             android:layout_weight="5.60" />
 
