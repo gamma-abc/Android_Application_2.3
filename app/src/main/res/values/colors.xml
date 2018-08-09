@@ -7,4 +7,7 @@
     <color name="colorOrange">#FFA500</color>
     <color name="colorGray">#F5F5F5</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBottonLine">#bebebe</color>
+    <color name="colorTittle">#FF7214</color>
 </resources>

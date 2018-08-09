@@ -10,9 +10,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.junk.android_application_23.IWangtRecuritSelectTypeActivity;
+import com.example.junk.android_application_23.JobDetailActivity;
 import com.example.junk.android_application_23.JobSearchActivity;
+import com.example.junk.android_application_23.MainActivity;
 import com.example.junk.android_application_23.R;
 
 /**
@@ -22,6 +26,7 @@ import com.example.junk.android_application_23.R;
 public class MainFragment extends Fragment{
     private EditText mEdit_job_search;
     private Button mbtn_jobsearch,mbtn_i_wang_recruit;
+    private View my_work1,home;
     private ImageButton imageButton_image_first;
 
     @Nullable
@@ -40,7 +45,27 @@ public class MainFragment extends Fragment{
         mbtn_jobsearch= (Button) getActivity().findViewById(R.id.button_JobSearch);
 //        我要招聘按钮获取ID
         mbtn_i_wang_recruit= (Button) getActivity().findViewById(R.id.i_want_recruit_button);
+//        LinearLayout获取ID
         setListeners();     //获取到ID后调用下面的方法
+
+         home=getActivity().findViewById(R.id.text_flag);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"hello",Toast.LENGTH_SHORT).show();
+            }
+        });
+        my_work1=getActivity().findViewById(R.id.work_1);
+        my_work1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getActivity(), JobDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
     /**
