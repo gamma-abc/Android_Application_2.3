@@ -34,7 +34,8 @@
         <activity android:name=".JobSearchActivity" />
         <activity android:name=".IWangtRecuritSelectTypeActivity" />
         <activity android:name=".ReleaseRecruitmentInformentActivity" />
-        <activity android:name=".JobDetailActivity"></activity>
+        <activity android:name=".JobDetailActivity" />
+        <activity android:name=".function.SetLanguageActivity"></activity>
     </application>
 
 </manifest>
